@@ -1,0 +1,52 @@
+{
+  "name": "crypto-withdrawal-fee",
+  "version": "0.0.1",
+  "description": "Get cryptocurrency withdrawal fees and minimums of cryptocurrency exchanges.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./dist/index.js",
+    "lint": "eslint . --ext '.js,.jsx,.ts,.tsx,.md'",
+    "prettier": "prettier -c --write '**/*'",
+    "prepublish": "npm run lint && npm run prettier && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulmachine/crypto-withdrawal-fee.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "author": "soulmachine",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/soulmachine/crypto-withdrawal-fee/issues"
+  },
+  "homepage": "https://github.com/soulmachine/crypto-withdrawal-fee",
+  "devDependencies": {
+    "@types/node": "^13.5.3",
+    "@types/yargs": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-markdown": "^1.0.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "yargs": "^15.1.0"
+  }
+}
